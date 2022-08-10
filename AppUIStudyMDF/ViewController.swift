@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        label.text = "Hello World!"
+        label.textColor = .blue
+        label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        label.textAlignment = .center
+        label.numberOfLines = 5
     }
-
-
 }
 
